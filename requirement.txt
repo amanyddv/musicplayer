@@ -1,2 +1,6 @@
 This is music application
 
+Features:
+dark mode
+
+

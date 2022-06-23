@@ -44,66 +44,6 @@ def rcc():
     label1.grid(row=4,column=0)
     frnd4=Entry(rc)
     frnd4.grid(row=4,column=1)
-
-    
-
-    def submit():
-        l1=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-        
-        sum1=0
-        for i in str(frnd1):
-            k=0
-            for j in l1:
-                k=k+1
-                if(i==j):
-                    break
-            sum1=sum1+k
-        sum1=str(sum1)
-        sum1=f'{str(frnd1)}{sum1}%'
-        print(sum1)
-        a=sum1
-        list.insert(i,a)
-
-        sum2=0
-        for i in str(frnd2):
-            k=0
-            for j in l1:
-                k=k+1
-                if(i==j):
-                    break
-            sum2=sum2+k
-        sum2=str(sum2)
-        sum2=str(frnd2)+sum2+"%"
-        a=sum2
-        list.insert(i,a)
-
-        sum3=0
-        for i in str(frnd3):
-            k=0
-            for j in l1:
-                k=k+1
-                if(i==j):
-                    break
-            sum3=sum3+k
-        sum3=str(sum3)
-        sum3=str(frnd3)+sum3+"%"
-        a=sum3
-        list.insert(i,a)
-
-        sum4=0
-        for i in str(frnd4):
-            k=0
-            for j in l1:
-                k=k+1
-                if(i==j):
-                    break
-            sum4=sum4+k
-        sum4=str(sum4)
-        sum4=str(frnd4)+sum4+"%"
-        a=sum4
-        list.insert(i,a)
-
-        
     
     Submit=Button(rc,width=10,bg="light steel blue",text="Submit",command=submit)
     Submit.grid(row=5,column=1)
